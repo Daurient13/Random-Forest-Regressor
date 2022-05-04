@@ -7,6 +7,8 @@ The Random Forest algorithm increases the randomness of the model while growing 
 
 ![Logo](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/rfc_vs_dt1.png)
 
+# Dataset
+![image](https://user-images.githubusercontent.com/86812576/166703666-67695e69-2f06-4563-95fe-7f63e32b4a5b.png)
 
 
 
