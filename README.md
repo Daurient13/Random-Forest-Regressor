@@ -83,3 +83,44 @@ which i have explained before, the dataset has a column index called ID
 I always work on data science projects with simple think so that I can benchmark. Using a simple model to benchmark. And most of the time it's more efficient and sometimes find a good one. but at the beginning I did mini Exploratory Data Analysis. **because i focus more on the algorithm**
 
 We check whether there is any missing data or not. We can see that our data is clean. No features are removed, we will use them all and go straight to dataset splitting
+
+# Dataset Splitting
+split the data into X, and y
+
+X = all columns except the target column.
+
+y = 'medv' as target
+
+test_size = 0.2 (which means 80% for train, and 20% for test)
+
+# Training
+In the Training step there are 3 main things that I specify.
+
+First, the preprocessor: here the columns will be grouped into numeric and categoric.
+
+included in the numeric column are: 'crim', 'zn', 'indus', 'nox', 'rm', 'age', 'dis', 'rad', 'tax',
+                             'ptratio', 'black', 'lstat'.
+
+and in the categoric column are: 'chas'. The interesting thing about random forest is that there is no obligation to use an encoder. for example if we have 1, 2, 3, 4, 5 then the decision will automatically encode. but if you use an encoder then it will help random forest so that the decision is not too heavy
+
+second, pipeline: contains the preprocessor as 'prep' which I defined earlier, and the algorithm as 'algo' which in this case I use Random Forest Regressor.
+
+and third, tuning with Grid Search: in this case I use the tuning recommendations (gsp.rf_params) that often occur in many cases. but does not rule out hyperparameter tuning if the model results are not good. with cross validation = 3.
+
+**GridSearch Parameters Recommendation** :
+
+**{'algo__n_estimators': [100, 150, 200],**
+
+ **'algo__max_depth': [20, 50, 80],**
+ 
+ **'algo__max_features': [0.3, 0.6, 0.8],**
+ 
+ **'algo__min_samples_leaf': [1, 5, 10]}**
+ 
+
+# Results
+we can see that the score is 0.91 and this is very good, but in the Random Forest Algorithm there is a tendency to overfit because we know the Decision Tree is very easy to overfit even though we have averaged it there is still a chance for it.
+
+![RF reg](https://user-images.githubusercontent.com/86812576/166943533-5df75fe8-1fcf-4044-80ab-294061e6165b.png)
+
+
