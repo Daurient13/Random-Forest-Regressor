@@ -17,9 +17,9 @@ crim    : city ​​crime rate per capita
 
 zn      : percentage of total housing > 25,000 sqr.ft
 
-indus   :
+indus   : percentage of non-retail business zone to city
 
-chas    :
+chas    : 1 = crossed by the river Charles, 0 = not crossed by the Charles river
 
 nox     :
 
