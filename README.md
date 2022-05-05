@@ -118,9 +118,21 @@ and third, tuning with Grid Search: in this case I use the tuning recommendation
  **'algo__min_samples_leaf': [1, 5, 10]}**
  
 
-# Results
+# Results dan Feature Importance
 we can see that the score is 0.91 and this is very good, but in the Random Forest Algorithm there is a tendency to overfit because we know the Decision Tree is very easy to overfit even though we have averaged it there is still a chance for it.
 
 ![RF reg](https://user-images.githubusercontent.com/86812576/166943533-5df75fe8-1fcf-4044-80ab-294061e6165b.png)
+
+**'algo__min_samples_leaf': 1** this will make the model overfit.
+
+We can remodel with several different parameter tuning. Can we improve?
+
+Scaling helps SVM and KNN but not for Random Forest, because if it is called, the position will be the same and have no effect. So scaling has no effect on tree base algorithms. But can do Feature Importance
+
+### Feature Importance
+**Mean Loss Decrease**
+We'll look at the average error/loss reduction contributed by each feature. For the classification case, the loss used is Gini-impurity, so it is often called the mean impurity decrease. for the case of regression, the loss used is the Mean Square Error, it may be called the mean MSE decrese. The loss in question is the criterion. The greater the loss that a feature has succeeded in reducing, the more important that feature is.
+
+![image](https://user-images.githubusercontent.com/86812576/166947310-24844cdc-5631-4d29-9b6d-bb3660ebabeb.png)
 
 
