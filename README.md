@@ -143,4 +143,11 @@ we randomize each variable and see how much the score reduction occurs. the grea
 
 ![image](https://user-images.githubusercontent.com/86812576/166953921-040dbc14-1a23-4233-8517-135ea2de078b.png)
 
+### Correlation-Causation Fallacy
+
+![image](https://user-images.githubusercontent.com/86812576/166954302-ca625396-2f74-4946-9206-1d83a103351f.png)
+
 in this figure, the Y axis is the number of Nobel laureates. The X axis is the amount of cokat consumption per capita. We can see that the more chocolate we eat, the more Nobel Prize winners. be careful this is only a correlation but no evidence of cause, this is just a coincidence and no causation.
+
+**including those of feature importance, this is just a correlation. we cannot say that the cause of the low price is 'lstat', indeed the variable 'lstat' is important but we cannot say it is the cause.**
+
