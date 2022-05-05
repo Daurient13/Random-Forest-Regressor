@@ -74,3 +74,12 @@ from **sklearn.ensemble** import **RandomForestRegressor**
 from **sklearn.model_selection** import **GridSearchCV**
 
 from **jcopml.tuning** import **grid_search_params as gsp**
+
+# Import Data
+
+which i have explained before, the dataset has a column index called ID
+
+# Mini Exploratory Data Analysis
+I always work on data science projects with simple think so that I can benchmark. Using a simple model to benchmark. And most of the time it's more efficient and sometimes find a good one. but at the beginning I did mini Exploratory Data Analysis. **because i focus more on the algorithm**
+
+We check whether there is any missing data or not. We can see that our data is clean. No features are removed, we will use them all and go straight to dataset splitting
