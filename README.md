@@ -8,7 +8,38 @@ The Random Forest algorithm increases the randomness of the model while growing 
 ![Logo](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/rfc_vs_dt1.png)
 
 # Dataset
+
+in this project, we will predict house prices in Boston. The dataset consists of 333 rows and 14 columns.
+and we have prepared a description of each column below:
 ![image](https://user-images.githubusercontent.com/86812576/166703666-67695e69-2f06-4563-95fe-7f63e32b4a5b.png)
+
+crim    : city ​​crime rate per capita
+
+zn      : percentage of total housing > 25,000 sqr.ft
+
+indus   :
+
+chas    :
+
+nox     :
+
+rm      :
+
+age     :
+
+dis     :
+
+rad     :
+
+tax     :
+
+ptratio :
+
+black   :
+
+lstat   :
+
+medv    :
 
 
 
