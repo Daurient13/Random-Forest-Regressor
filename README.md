@@ -131,6 +131,7 @@ Scaling helps SVM and KNN but not for Random Forest, because if it is called, th
 
 ### Feature Importance
 **Mean Loss Decrease**
+
 We'll look at the average error/loss reduction contributed by each feature. For the classification case, the loss used is Gini-impurity, so it is often called the mean impurity decrease. for the case of regression, the loss used is the Mean Square Error, it may be called the mean MSE decrese. The loss in question is the criterion. The greater the loss that a feature has succeeded in reducing, the more important that feature is. **The Mean Loss Decrease only works for Tree Base Algorithms**
 
 ![image](https://user-images.githubusercontent.com/86812576/166947310-24844cdc-5631-4d29-9b6d-bb3660ebabeb.png)
@@ -139,6 +140,7 @@ if we look at the Mean Loss Decrease, it turns out that the feature that contrib
 And We will use this for feature selection and focus only on the important features.
 
 **Mean Score Decrease**
+
 we randomize each variable and see how much the score reduction occurs. the greater the decrease in score, it means that the feature is more important. Basically Mean Score Decrease works the same as Mean Loss Decrease. but the difference is that MSE can be used by all algorithms, while MLD can only be used by Tree Base Algorithms.
 
 ![image](https://user-images.githubusercontent.com/86812576/166953921-040dbc14-1a23-4233-8517-135ea2de078b.png)
