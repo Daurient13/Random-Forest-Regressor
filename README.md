@@ -17,29 +17,29 @@ crim    : city ​​crime rate per capita
 
 zn      : percentage of total housing > 25,000 sqr.ft
 
-indus   : percentage of non-retail business zone to city
+indus   : percentage of non-retail business zones in the city
 
 chas    : 1 = crossed by the river Charles, 0 = not crossed by the Charles river
 
-nox     :
+nox     : NOx pollution concentration (parts per 10 million)
 
-rm      :
+rm      : number of rooms (on average)
 
-age     :
+age     : percentage of houses built before 1940
 
-dis     :
+dis     : average distance to 5 work districts in Boston (weigthed average)
 
-rad     :
+rad     : accessibility index to radial highway
 
-tax     :
+tax     : tax(per $10000)
 
-ptratio :
+ptratio : student-teacher ratio (by town)
 
-black   :
+black   : percentage of black people
 
-lstat   :
+lstat   : percentage of lower class population
 
-medv    :
+medv    : median house price (Target)
 
 
 
